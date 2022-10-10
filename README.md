@@ -30,6 +30,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+
 ![BitFit_part1](https://user-images.githubusercontent.com/86134647/194955462-e8b7d172-fed4-4ffe-bcce-d518e4cf3291.gif)
 
 GIF created with LiceCap
