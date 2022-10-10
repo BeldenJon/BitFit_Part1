@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFood">
+
+    <TextView
+        android:id="@+id/textFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addFoodName"
+        app:layout_constraintEnd_toStartOf="@+id/addFoodName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addFoodName" />
+
+    <EditText
+        android:id="@+id/addFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="14"
+        android:hint="Item Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addFoodCalories"
+        app:layout_constraintEnd_toEndOf="@id/textFoodName"
+        app:layout_constraintTop_toTopOf="@+id/addFoodCalories" />
+
+    <EditText
+        android:id="@+id/addFoodCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:hint="ex: 5.99"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/addFoodName"
+        app:layout_constraintTop_toBottomOf="@+id/addFoodName" />
+
+    <TextView
+        android:id="@+id/textFoodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Group:"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addFoodGroup"
+        app:layout_constraintEnd_toEndOf="@+id/textCalories"
+        app:layout_constraintTop_toTopOf="@+id/addFoodGroup" />
+
+    <EditText
+        android:id="@+id/addFoodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="ex: fruit"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/addFoodCalories"
+        app:layout_constraintStart_toStartOf="@+id/addFoodCalories"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/recordFoodBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECORD THIS FOOD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addFoodGroup" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
